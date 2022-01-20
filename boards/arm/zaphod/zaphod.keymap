@@ -29,7 +29,31 @@
             bindings = <&mo MED_L>;
         };
 
-        fn_mo {
+        combo_semi {
+          timeout-ms = <50>;
+          key-positions = <26 27>;
+          bindings = <&kp SEMI>;
+        };
+         
+        combo_esc {
+          timeout-ms = <50>;
+          key-positions = <10 11>;
+          bindings = <&kp ESC>;
+	};
+	
+	combo_leftpar {
+          timeout-ms = <50>;
+          key-positions = <5 6>;
+          bindings = <&kp LEFT_PARENTHESIS>;
+        };
+         
+        combo_rightpar {
+          timeout-ms = <50>;
+          key-positions = <6 7>;
+          bindings = <&kp RIGHT_PARENTHESIS>;
+	};
+	
+	fn_mo {
 	    timeout-ms = <50>;
             key-positions = <32 33>;
             bindings = <&mo FUN_L>;
@@ -57,7 +81,7 @@
                 &kp Q      &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
                 &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F    &kp G         &kp H            &hm RSHFT J    &hm RCTRL K &hm LALT L &hm LGUI QUOT
                 &kp Z      &kp X      &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
-                                                  &lt NAV_L TAB  &lt OTH_L RET &lt NUM_L SPACE  &lt SYM_L BKSP
+                                                  &lt NAV_L TAB  &lt OTH_L SPACE &lt NUM_L BKSP &lt SYM_L RET
             >;
         };
 
