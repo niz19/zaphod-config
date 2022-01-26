@@ -124,9 +124,9 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                &kp LBRC     &kp LS(N7)  &kp LS(N8)  &kp LS(N9) &kp RBRC        &trans &trans  &trans    &trans    &kp TILDE
-                &kp COLON    &kp LS(N4)  &kp LS(N5)  &kp LS(N6) &kp PLUS        &MINUS &EQUAL  &GRAVE    &trans    &trans
-                &kp TILDE    &kp LS(N1)  &kp LS(N2)  &kp LS(N3) &kp LS(BSLH)    &UNDER &PLUS   &trans    &trans    &trans
+                &kp LBRC     &kp LS(N7)  &kp LS(N8)  &kp LS(N9) &kp RBRC        &trans    &trans     &trans    &trans    &kp TILDE
+                &kp COLON    &kp LS(N4)  &kp LS(N5)  &kp LS(N6) &kp PLUS        &kp MINUS &kp EQUAL  &kp GRAVE &trans    &trans
+                &kp TILDE    &kp LS(N1)  &kp LS(N2)  &kp LS(N3) &kp LS(BSLH)    &kp UNDER &kp PLUS   &trans    &trans    &trans
                                                    &kp LS(N0) &kp UNDER         &trans &trans
             >;
         };
