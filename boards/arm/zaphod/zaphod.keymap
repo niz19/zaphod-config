@@ -29,9 +29,15 @@
             bindings = <&tog NUM_L>;
         };
 
-        combo_quote {
+        combo_enter {
           timeout-ms = <50>;
           key-positions = <26 27>;
+          bindings = <&kp RET>;
+        };
+
+        combo_quote {
+          timeout-ms = <50>;
+          key-positions = <18 19>;
           bindings = <&kp SQT>;
         };
 
@@ -94,7 +100,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-                &trans     &trans     &trans      &trans          &mo 2        &trans           &trans         &trans      &trans     &trans
+                &mo 2      &trans     &trans      &trans          &mo 5        &trans           &trans         &trans      &trans     &trans
                 &trans     &trans     &trans      &trans          &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW   &trans
                 &trans     &trans     &trans      &trans          &trans       &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &trans
                                                   &trans          &trans       &kp DEL          &kp RET
@@ -114,9 +120,9 @@
         num_layer {
             label = "Num";
             bindings = <
-                &trans          &trans         &trans      &trans     &trans   &kp N7     &kp N8      &kp N9      &trans          &trans 
-                &trans          &trans         &trans      &trans     &trans   &kp N4     &kp N5      &kp N6      &trans          &trans
-                &trans          &trans         &trans      &trans     &trans   &kp N1     &kp N2      &kp N3      &trans         &trans      
+                &trans          &trans         &trans      &trans     &trans   &trans     &kp N7     &kp N8      &kp N9      &trans
+                &trans          &trans         &trans      &trans     &trans   &trans     &kp N4     &kp N5      &kp N6      &trans
+                &trans          &trans         &trans      &trans     &trans   &trans     &kp N1     &kp N2      &kp N3      &trans
                                                            &trans     &trans   &trans     &kp N0 
             >;
         };
