@@ -16,10 +16,6 @@
 #define MED_L 5
 #define FUN_L 6
 
-// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
-
-    
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <50>; \
@@ -27,6 +23,10 @@
     key-positions = <KEYPOS>; \
   };
 
+// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
+&lt { quick_tap_ms = <200>; };
+
+/ {
    combos {
      compatible = "zmk,combos";
 
@@ -158,6 +158,5 @@ keymap {
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
+   };
 };
-};
-
