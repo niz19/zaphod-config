@@ -23,10 +23,6 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-/ {
-   combos {
-     compatible = "zmk,combos";
-
        COMBO(med_mo, &tog NUM_L, 30 31)
        COMBO(fn_mo, &mo FUN_L, 32 33)
        COMBO(enter, &kp RET, 16 17)
@@ -35,4 +31,3 @@ compatible = "zmk,combos";
        COMBO(esc, &kp ESC, 13 14)
        COMBO(leftpar, &kp LEFT_PARENTHESIS, 3 4)
        COMBO(rightpar, &kp RIGHT_PARENTHESIS, 5 6)
-    };
