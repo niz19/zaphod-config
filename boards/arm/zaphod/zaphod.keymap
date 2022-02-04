@@ -34,10 +34,13 @@
        COMBO(fn_mo, &mo FUN_L, 32 33)
        COMBO(enter, &kp RET, 16 17)
        COMBO(tab, &kp TAB, 12 13)
-       COMBO(quote, &kp SQT, 15 16)
        COMBO(esc, &kp ESC, 13 14)
+       COMBO(quote, &kp SQT, 15 16)
+       COMBO(ast, &kp ASTRK, 25 26)
        COMBO(leftpar, &kp LEFT_PARENTHESIS, 2 3)
        COMBO(rightpar, &kp RIGHT_PARENTHESIS, 6 7)
+       COMBO(leftbracket, &kp LEFT_BRACKET, 1 2)
+       COMBO(rightbracket, &kp RIGHT_BRACKET, 7 8)
     };
 
     behaviors {
@@ -62,7 +65,7 @@ keymap {
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
              &hm LSHFT A   &hm LALT S    &hm LCTRL D   &hm LGUI  F   &kp G             &kp H         &hm RGUI J    &hm RCTRL K   &hm LALT L    &hm LSHFT SEMI
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-             &hm LSHFT Z   &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH
+             &hm LSHFT Z   &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &hm LSHFT FSLH
         // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                        &sl 3         &lt NAV_L SPACE   &mt LSHFT BKSP  &sl 4
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -75,7 +78,7 @@ keymap {
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                 &mo 2      &trans        &trans         &trans        &mo 5            &trans        &trans         &trans       &trans        &trans
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-                &trans     &trans        &kp SQT        &kp DQT       &trans           &kp LARW      &kp DARW       &kp UARW     &kp RARW      &trans
+                &trans     &trans        &trans         &trans        &trans           &kp LARW      &kp DARW       &kp UARW     &kp RARW      &trans
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
                 &trans     &trans        &trans         &trans        &trans           &kp HOME      &kp PG_DN      &kp PG_UP    &kp END       &trans
         // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -118,13 +121,13 @@ keymap {
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK     &kp TILDE     &kp LG(N7) 
+             &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp LG(N1)    &kp LG(N4)    &kp LG(N7)      
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-             &kp F10       &kp F1        &kp LBRC      &kp GRAVE     &kp RBRC          &kp MINUS     &kp EQUAL     &kp SQT       &kp LG(N2)    &kp LG(N3)
+             &kp TILDE     &none         &kp DQT       &kp SQT       &kp GRAVE         &kp MINUS     &kp EQUAL     &kp LG(N2)    &kp LG(N5)    &kp LG(N8)
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-             &kp BSLH      &kp F2        &kp F5        &kp F6        &kp F10           &kp UNDER     &kp PLUS      &kp LG(N4)    &kp LG(N5)    &kp LG(N6)
+             &kp F1        &kp F2        &kp F5        &kp F6        &kp F10           &kp UNDER     &kp PLUS      &kp LG(N3)    &kp LG(N6)    &kp BSLH
         // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                       &kp LC(LARW)  &kp LC(RARW)      &kp LG(N1)     &trans
+                                                       &kp LC(LARW)  &kp LC(RARW)      &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
