@@ -21,8 +21,6 @@
     quick_tap_ms = <200>;
 };
 
-/ {
-
   combos {
     #include "combos.dtsi"
   };
@@ -57,7 +55,7 @@ keymap {
         };
 
         nav_layer {
-            label = "Nav";
+            label  "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                 &mo 2      &trans        &trans         &trans        &mo 5            &trans        &trans         &trans       &trans        &trans
