@@ -36,8 +36,8 @@
        COMBO(tab, &kp TAB, 12 13)
        COMBO(quote, &kp SQT, 15 16)
        COMBO(esc, &kp ESC, 13 14)
-       COMBO(leftpar, &kp LEFT_PARENTHESIS, 2 3)
-       COMBO(rightpar, &kp RIGHT_PARENTHESIS, 6 7)
+       COMBO(leftpar, &kp LEFT_PARENTHESIS, 3 4)
+       COMBO(rightpar, &kp RIGHT_PARENTHESIS, 5 6)
     };
 
     behaviors {
@@ -75,11 +75,11 @@ keymap {
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                 &mo 2      &trans        &trans         &trans        &mo 5            &trans        &trans         &trans       &trans        &trans
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-                &trans     &kp LGUI(2)   &kp LGUI(3)   &kp LGUI(4)    &kp LGUI(1)      &kp LARW      &kp DARW       &kp UARW     &kp RARW      &trans
+                &trans     &trans        &trans         &trans        &trans           &kp LARW      &kp DARW       &kp UARW     &kp RARW      &trans
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-                &trans     &kp LGUI(8)   &kp LGUI(7)   &kp LGUI(5)    &kp LGUI(6)      &kp HOME      &kp PG_DN      &kp PG_UP    &kp END       &trans
+                &trans     &trans        &trans         &trans        &trans           &kp HOME      &kp PG_DN      &kp PG_UP    &kp END       &trans
         // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                        &trans        &trans           &kp DEL       &kp RET
+                                                        &trans        &trans           &kp DEL          &kp RET
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -120,11 +120,11 @@ keymap {
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp LBRC      &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp RBRC          &trans        &trans        &trans        &trans        &kp TILDE
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-             &kp COLON     &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp BSLH          &kp MINUS     &kp EQUAL     &kp GRAVE     &trans        &trans
+             &kp COLON     &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp PLUS          &kp MINUS     &kp EQUAL     &kp GRAVE     &trans        &trans
         // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
              &kp TILDE     &kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(BSLH)      &kp UNDER     &kp PLUS      &trans        &trans        &trans
         // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                       &kp LS(N0)    &trans            &trans        &trans
+                                                       &kp LS(N0)    &kp UNDER         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
