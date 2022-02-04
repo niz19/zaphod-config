@@ -17,9 +17,9 @@
 #define FUN_L 6
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt {
-    quick_tap_ms = <200>;
-};
+&lt { quick_tap_ms = <200>; };
+
+/ {
 
   combos {
     #include "combos.dtsi"
@@ -144,3 +144,4 @@ keymap {
             >;
         };
    };
+};
