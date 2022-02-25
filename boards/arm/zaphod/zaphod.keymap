@@ -36,10 +36,14 @@
        COMBO(tab, &kp TAB, 12 13)
        COMBO(esc, &kp ESC, 13 14)
        COMBO(quote, &kp SQT, 15 16)
-       COMBO(leftpar, &kp LEFT_PARENTHESIS, 2 3)
+       COMBO(leftpar, &kp LEFT_PARENTHESIS, 5 6)
        COMBO(rightpar, &kp RIGHT_PARENTHESIS, 6 7)
-       COMBO(leftbracket, &kp LEFT_BRACKET, 1 2)
-       COMBO(rightbracket, &kp RIGHT_BRACKET, 7 8)
+       COMBO(vimslash, &kp FSLH, 27 28)
+       COMBO(question, &kp QMARK, 21 22)
+       COMBO(leftbracket, &kp LEFT_BRACKET, 3 13)
+       COMBO(rightbracket, &kp RIGHT_BRACKET, 4 14)
+       COMBO(leftbrace, &kp LEFT_BRACE, 5 15)
+       COMBO(rightbrace, &kp RIGHT_BRACE, 6 16)
     };
 
     behaviors {
