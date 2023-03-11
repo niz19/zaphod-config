@@ -31,7 +31,6 @@
      compatible = "zmk,combos";
 
        COMBO(med_mo, &tog NUM_L, 30 31)
-       COMBO(fn_mo, &mo FUN_L, 32 33)
        COMBO(enter, &kp RET, 16 17)
        COMBO(enter, &kp RET, 32 33)
        COMBO(tab, &kp TAB, 12 13)
@@ -45,6 +44,8 @@
        COMBO(rightbracket, &kp RIGHT_BRACKET, 4 14)
        COMBO(leftbrace, &kp LEFT_BRACE, 5 15)
        COMBO(rightbrace, &kp RIGHT_BRACE, 6 16)
+//     COMBO(fn_mo, &mo FUN_L, 32 33)
+
     };
 
     behaviors {
